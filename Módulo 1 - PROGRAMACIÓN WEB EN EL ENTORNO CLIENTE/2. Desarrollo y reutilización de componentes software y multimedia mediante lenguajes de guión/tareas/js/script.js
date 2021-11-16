@@ -6,12 +6,14 @@ function addTarea() {
   ).textContent;
   tarea.append(miTexto);
   const enlace = document.createElement("a");
+  enlace.href = '#';
   enlace.className = "delete-item secondary-content";
   enlace.innerHTML = '<i class="fa fa-remove"></i>';
   tarea.append(enlace);
 
   const ul = document.querySelector("ul.collection");
   ul.append(tarea);
+  console.log(tarea);
 }
 
 const task = document.querySelector(".btn");
