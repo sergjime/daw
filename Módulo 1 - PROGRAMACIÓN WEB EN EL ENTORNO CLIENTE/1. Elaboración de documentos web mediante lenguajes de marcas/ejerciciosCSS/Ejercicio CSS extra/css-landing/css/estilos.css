@@ -1,0 +1,44 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+
+/* 
+  DESKTOP
+*/
+
+@media (max-width: 1280px) {
+  body {
+    background-color: red;
+  }
+  .texto:before {
+    content: "Desktop";
+  }
+}
+
+/* 
+  TABLET
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: orange;
+  }
+  .texto:before {
+    content: "Tablet";
+  }
+}
+
+
+/* 
+  MÓVIL
+*/
+
+@media (min-width: 481px) {
+  body {
+    background-color: pink;
+  }
+  .texto:before {
+    content: "Low Resolution Tablets, Mobiles (Landscape)";
+  }
+}

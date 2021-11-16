@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 07</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Preferencias</legend>
+        <form id="formulario1">
+            <input type="checkbox" id="geo" name="geo" value="geo">
+            <label for="geo"> Geografía</label>
+            <input type="checkbox" id="lengua" name="lengua" value="lengua">
+            <label for="lengua"> Lengua</label>
+            <input type="checkbox" id="mates" name="mates" value="mates">
+            <label for="mates"> Matemáticas</label>
+            <input type="checkbox" id="historia" name="historia" value="historia">
+            <label for="historia"> Historia</label><br>
+            <textarea rows="4" cols="50" name="comment" form="formulario1">Escriba aquí, por favor</textarea><br>
+            DNI: <input type="text" name="dni"> Nombre: <input type="text" name="nombre"><br>
+            Elija una fecha: <input type="date" name="fecha"><br>
+            Elija un color: <input type="color" name="color"><br>
+            Elija una hora: <input type="time" name="hora"><br>
+            <select name="speed" id="speed">
+                <option value="mega">100 Mbits</option>
+                <option value="giga">1 Gbits</option>
+                <option value="kilo">1000 Kbits</option>
+            </select><br>
+            <input type="radio" id="python" name="python" value="python">
+            <label for="python"> Python</label>
+            <input type="radio" id="html" name="html" value="html">
+            <label for="html"> HTML</label>
+            <input type="radio" id="visual" name="visual" value="visual">
+            <label for="visual"> Visual Basic</label>
+            <input type="radio" id="java" name="java" value="java">
+            <label for="java"> Java</label><br>
+            <label for="myfile">Elija un fichero:</label>
+            <input type="file" id="myfile" name="myfile">
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Rellene las opciones siguientes</legend>
+        <form id="formulario2"></form>
+        <input type="radio" id="tajeta" name="tajeta" value="tajeta">
+        <label for="tajeta"> Tarjeta aceledadora</label><br>
+        <input type="radio" id="led" name="led" value="led">
+        <label for="led"> Monitor LED</label><br>
+        <input type="radio" id="ssd" name="ssd" value="ssd">
+        <label for="ssd"> SSD</label><br><br>
+        DNI: <input type="text" name="dni"> Nombre: <input type="text" name="nombre"><br>
+        Elija un color: <input type="color" name="color"><br>
+        <input type="checkbox" id="mates" name="mates" value="mates">
+            <label for="mates"> Matemáticas</label>
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+header {
+    display: flex;
+}
+
+fieldset {
+    margin: 5px;
+}
+article {
+    padding: 1px 0 2px 5px;
+    background-color: #FFFCFC;
+    border: #E1DBDA solid 1px;
+    border-radius: 5px;
+    margin: 5px;
+}
