@@ -1,0 +1,9 @@
+.normal {
+  color: black;
+  background-color: whitesmoke;
+}
+
+.invertido {
+  color: whitesmoke;
+  background-color: black;
+}
