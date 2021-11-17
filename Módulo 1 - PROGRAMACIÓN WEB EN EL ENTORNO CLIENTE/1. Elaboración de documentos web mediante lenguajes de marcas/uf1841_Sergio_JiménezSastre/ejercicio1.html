@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <main>
+        <fieldset>
+            <legend><strong>FORM1</strong></legend>
+            <form action="./ejercicio1.html" method="get" name="form1" id="form1" enctype="multipart/form-data">
+                <p><label for="user"><b>Usuario:</b></label> <input type="text" name="user" id="user"></p>
+                <p><label for="pass"><b>Contraseña:</b></label> <input type="password" name="pass" id="pass"></p>
+                <p><label for="descripcion"><b>Descripción:</b></label><textarea rows="4" cols="50" id="descripcion"
+                        name="descripcion" form="form1">Descripción aquí</textarea></p>
+                <p>
+                    <input type="checkbox" id="app" name="app" value="app">
+                    <label for="app"> Error aplicación</label>
+                    <input type="checkbox" id="sistema" name="sistema" value="sistema">
+                    <label for="sistema"> Error sistema</label>
+                    <input type="checkbox" id="hardware" name="hardware" value="hardware">
+                    <label for="hardware">Error en el hardware</label>
+                    <input type="checkbox" id="no_internet" name="no_internet" value="no_internet">
+                    <label for="no_internet">Sin internet</label>
+                </p>
+                <p>
+                    <label for="sreen_error"><b>Captura del error:</b></label>
+                    <input type="file" id="sreen_error" name="sreen_error">
+                </p>
+                <input type="submit" value="Enviar datos" formmethod="get">
+            </form>
+        </fieldset><br><br><br>
+        <fieldset>
+            <legend><strong>FORM2</strong></legend>
+            <form action="./ejercicio2.html" method="get" name="form2" id="form2">
+                <p><label for="precio"><b>Precio:</b></label> <input type="number" name="precio" id="precio"></p>
+                <p><label for="iva"><b>Tipos de IVA:</b></label>
+                    <select name="iva" id="iva">
+                        <option value="general">IVA Geneal</option>
+                        <option value="reducido">IVA Reducido</option>
+                        <option value="superreducido">IVA Superreducido</option>
+                        <option value="exentas">Actividades exentas de IVA</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="radio" id="manzanas" name="manzanas" value="manzanas">
+                    <label for="manzanas">Manzanas</label>
+                    <input type="radio" id="naranjas" name="naranjas" value="naranjas">
+                    <label for="naranjas">Naranjas</label>
+                    <input type="radio" id="pinyas" name="pinyas" value="pinyas">
+                    <label for="pinyas">Piñas</label>
+                    <input type="radio" id="fresas" name="fresas" value="tajeta">
+                    <label for="fresas">Fresas</label>
+                </p>
+                <input type="submit" value="Enviar datos" formmethod="get">
+            </form>
+        </fieldset>
+    </main>
+</body>
+
+</html>

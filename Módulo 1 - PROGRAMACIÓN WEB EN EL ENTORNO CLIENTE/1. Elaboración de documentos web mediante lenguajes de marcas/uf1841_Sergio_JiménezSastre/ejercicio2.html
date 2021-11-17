@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #DAF1F2;
+        }
+
+        body>main {
+            width: 68%;
+            margin: auto;
+        }
+
+        fieldset {
+            background-color: #F9F5EF;
+            border-radius: 1rem;
+            margin: 3em 0 0 0;
+        }
+
+        legend {
+            background-color: whitesmoke;
+            border-radius: 1rem;
+            font-size: 0.8rem;
+            border: solid 1px gray;
+            padding: 1em;
+        }
+
+        label {
+            margin-right: 1rem;
+        }
+
+        input[type="submit"] {
+            padding: 1rem;
+            margin-top: 0.7em;
+            font-size: 1.5em;
+            width: 100%;
+            color: white;
+            background-color: #4ADAE0;
+        }
+
+        input[type="submit"]:hover {
+            padding: 1rem;
+            width: 100%;
+            background-color: #20A2A7;
+        }
+
+        .negrita {
+            font-weight: bold;
+        }
+
+        .form1 :nth-child(4),
+        .form2 :nth-child(3) {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 960px) {
+            body {
+                font-size: 12px;
+            }
+
+            body>main {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <fieldset>
+            <legend class="negrita">FORM1</legend>
+            <!---------------------------------------------------------- PRIMER FORMULARIO ---------------------------------------------------------->
+            <form action="./ejercicio1.html" method="get" class="form1" name="form1" id="form1"
+                enctype="multipart/form-data">
+                <p><label for="user" class="negrita">Usuario:</label> <input type="text" name="user" id="user"></p>
+                <p><label for="pass" class="negrita">Contraseña:</label> <input type="password" name="pass" id="pass">
+                </p>
+                <p><label for="descripcion" class="negrita">Descripción:</label><textarea rows="4" cols="50"
+                        id="descripcion" name="descripcion" form="form1">Descripción aquí</textarea></p>
+                <!-- DIV CON FLEX -->
+                <div>
+                    <div>
+                        <input type="checkbox" id="app" name="app" value="app">
+                        <label for="app"> Error aplicación</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sistema" name="sistema" value="sistema">
+                        <label for="sistema"> Error sistema</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="hardware" name="hardware" value="hardware">
+                        <label for="hardware">Error en el hardware</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="no_internet" name="no_internet" value="no_internet">
+                        <label for="no_internet">Sin internet</label>
+                    </div>
+                </div>
+                <p>
+                    <label for="sreen_error" class="negrita">Captura del error:</label>
+                    <input type="file" id="sreen_error" name="sreen_error">
+                </p>
+                <input type="submit" value="Enviar datos" formmethod="get" class="negrita">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend class="negrita">FORM2</legend>
+            <!---------------------------------------------------------- SEGUNDO FORMULARIO ---------------------------------------------------------->
+            <form action="./ejercicio2.html" method="get" class="form2" name="form2" id="form2">
+                <p><label for="precio" class="negrita">Precio:</label> <input type="number" name="precio" id="precio">
+                </p>
+                <p><label for="iva" class="negrita"><a
+                            href="https://www.bolsamania.com/declaracion-impuestos-renta/tipos-de-iva/">Tipos de
+                            IVA</a>:</label>
+                    <select name="iva" id="iva">
+                        <option value="general">IVA Geneal</option>
+                        <option value="reducido">IVA Reducido</option>
+                        <option value="superreducido">IVA Superreducido</option>
+                        <option value="exentas">Actividades exentas de IVA</option>
+                    </select>
+                </p>
+                <!-- DIV CON FLEX -->
+                <div>
+                    <div>
+                        <input type="radio" id="manzanas" name="manzanas" value="manzanas">
+                        <label for="manzanas">Manzanas</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="naranjas" name="naranjas" value="naranjas">
+                        <label for="naranjas">Naranjas</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pinyas" name="pinyas" value="pinyas">
+                        <label for="pinyas">Piñas</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="fresas" name="fresas" value="tajeta">
+                        <label for="fresas">Fresas</label>
+                    </div>
+                </div>
+                <input type="submit" value="Enviar datos" formmethod="get" class="negrita">
+            </form>
+        </fieldset>
+    </main>
+</body>
+
+</html>
