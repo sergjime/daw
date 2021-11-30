@@ -19,7 +19,7 @@ Cometa.prototype = {
     return this.diametro / 2;
   },
   obtenerTemperaturaFarenheit: function () {
-      return (this.temperatura * 9 / 5) + 32;
+      return (this.temperatura * 9) / 5 + 32;
   }
 };
 
