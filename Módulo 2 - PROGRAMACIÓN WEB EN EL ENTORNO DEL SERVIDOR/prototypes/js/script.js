@@ -15,11 +15,11 @@ function Cometa(diametro, temperatura, nombre) {
 Cometa.prototype = {
   definicionSegunDiccionario:
     "Un cometa es un cuerpo celeste constituido por hielo, polvo y rocas que orbita alrededor del Sol siguiendo diferentes trayectorias elípticas.",
-  obtenerRadio: function (ancho, alto) {
-    return Math.min(ancho, alto) / 2;
+  obtenerRadio: function () {
+    return this.diametro / 2;
   },
-  obtenerTemperaturaFarenheit: function (celsius) {
-      return (celsius * 1.8) + 32;
+  obtenerTemperaturaFarenheit: function () {
+      return (this.temperatura * 9 / 5) + 32;
   }
 };
 
