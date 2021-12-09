@@ -57,13 +57,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
 # Dependency directories
 node_modules/
 jspm_packages/
 
 # Info json
-package.lock.json/
+package-lock.json/
 
 # Optional npm cache directory
 .npm
