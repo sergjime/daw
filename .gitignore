@@ -61,9 +61,6 @@ yarn-error.log*
 node_modules/
 jspm_packages/
 
-# Info json
-package-lock.json
-
 # Optional npm cache directory
 .npm
 
