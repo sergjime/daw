@@ -27,7 +27,7 @@ const server = http.createServer((req, res) => {
     );
   } else {
     fs.readFile(
-      path.join(__dirname, "public", "about.html"),
+      path.join(__dirname, "public", "notFound.html"),
       (err, content) => {
         if (err) throw err;
         res.writeHead(200, { "Content-type": "text/html" });
